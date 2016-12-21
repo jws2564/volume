@@ -1,0 +1,50 @@
+{
+  "workoutData": {
+    "id": 1,
+    "name": "shoulders",
+    "goalVolume": "8000",
+    "overview": {
+      "completed": 1,
+      "avgDuration": "60",
+      "currentVolume": "5322"
+    },
+    "volumeHistory" : [
+      {
+        "date": "",
+        "volume": ""
+      },
+      {
+        "date": "",
+        "volume": ""
+      }
+    ],
+    "exercises":[
+      {
+        "name": "lat pull down",
+        "volume": "4000",
+        "sets": "4",
+        "reps": "10",
+        "weight": "100",
+        "rest": "90",
+        "tags": [
+          {
+            "name": "back",
+            "id": "1"
+          },
+          {
+            "name": "lats",
+            "id": "2"
+          }
+        ],
+        "oneRepMax": {
+          "max": "160",
+          "percent": "80"
+        }
+      }
+    ],
+    "notes": "This workout is just ok...",
+    "metric": "reps"
+  }
+}
+
+
