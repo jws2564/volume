@@ -1,22 +1,28 @@
-<div class="sub-nav">
-  <div class="title">
-    <h2>Workouts</h2>
+<div class="page-header" sticky>
+  <div class="sub-nav">
+    <div class="title">
+      <h2>Workouts</h2>
+    </div>
+  </div>
+  <div class="table-header">
+    <table class="three-col">
+      <thead>
+      <th width="35%">name</th>
+      <th width="35%">last completed</th>
+      <th width="20%">duration</th>
+      <th width="10%"></th>
+      </thead>
+    </table>
   </div>
 </div>
 <div class="workouts page-content">
-  <table class="alternate">
-    <thead>
-      <th>name</th>
-      <th>last completed</th>
-      <th>duration</th>
-      <th></th>
-    </thead>
+  <table class="alternate three-col">
     <tbody>
       <tr *ngFor="let workout of workouts">
-        <td>{{workout.name}}</td>
-        <td>{{workout.lastCompleted | date:'short'}}</td>
-        <td>{{workout.duration}} <span class="time-unit">mins</span></td>
-        <td><a [routerLink]="['/workout', workout.id]"><img class="arrow-go" src="/assets/arrow-right.png" /></a></td>
+        <td width="35%">{{workout.name}}</td>
+        <td width="35%">{{workout.lastCompleted | date:'M/d/yy'}}</td>
+        <td width="20%">{{workout.duration}} <span class="time-unit">mins</span></td>
+        <td width="10%"><a [routerLink]="['/workout', workout.id]"><img class="arrow-go" src="/assets/arrow-right.png" /></a></td>
       </tr>
     </tbody>
   </table>
